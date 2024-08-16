@@ -1,0 +1,575 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elo Assessment</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header class="site-header" style="">
+        <div class="site-header__container">
+    
+            
+            
+    
+    <nav id="site-nav" class="site-nav">
+        <ul class="site-nav__list">
+            <li class="site-nav__list-item">
+                <a href="/" class="site-nav__item-link site-nav__item-link--has-logo">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="43" height="32"><path class="cls-1" d="M24.563 31.745V.033h-6.048v31.712h6.048zM7.537 32a26.113 26.113 0 0 1-3.19-.259c-2.7-.6-4.293-2.008-4.293-3.957V10.232c0-2.628 2.9-4.275 7.5-4.275s7.5 1.647 7.5 4.275v9.353H6.1v8.106c0 1.158.567 1.247 1.45 1.247S9 28.85 9 27.691v-5.967h6.047v6.057c0 1.953-1.6 3.365-4.31 3.961a30.494 30.494 0 0 1-3.2.258zM9 10.322c0-1.159-.567-1.247-1.448-1.247s-1.45.088-1.45 1.247V16.6H9v-6.28zM35.709 32c-1.3 0-3.371-.255-3.371-.255h-.024c-2.708-.6-4.307-2.008-4.307-3.961V10.232c0-2.628 2.9-4.275 7.5-4.275S43 7.6 43 10.232v17.549c0 1.956-1.6 3.368-4.319 3.963h.011a25.494 25.494 0 0 1-2.983.256zm1.244-21.678c0-1.159-.567-1.247-1.45-1.247s-1.448.088-1.448 1.247v17.37c0 1.158.566 1.247 1.448 1.247s1.45-.089 1.45-1.247v-17.37zM0 0v4.137h15.071V0H0z"></path></svg>
+    
+                                </a>
+            </li>
+    
+            
+                
+                <li class="site-nav__list-item">
+                    
+                    
+                    <a href="javascript:void(0)" class="site-nav__item-link" data-submenu-ref="products">
+                        <span class="site-nav__item-link-text">
+                            Products                    </span>
+                    </a>
+                </li>
+                
+            
+                
+                <li class="site-nav__list-item">
+                    
+                    
+                    <a href="javascript:void(0)" class="site-nav__item-link" data-submenu-ref="solutions">
+                        <span class="site-nav__item-link-text">
+                            Solutions                    </span>
+                    </a>
+                </li>
+                
+            
+                
+                <li class="site-nav__list-item">
+                    
+                    
+                    <a href="javascript:void(0)" class="site-nav__item-link" data-submenu-ref="services">
+                        <span class="site-nav__item-link-text">
+                            Services                    </span>
+                    </a>
+                </li>
+                
+            
+                
+                            
+                <li class="site-nav__list-item">
+                    
+                    
+                        
+                    
+                    <a href="https://myelo.elotouch.com/support" class="site-nav__item-link" data-submenu-ref="support">
+                        <span class="site-nav__item-link-text">
+                            Support                    </span>
+                    </a>
+                </li>
+                
+                            
+            
+                
+                            
+            
+    
+        </ul> 
+    
+        <ul class="site-nav__list site-nav__list--right">
+            <li class="site-nav__list-item site-nav__language-selector site-nav__language-selector--us">
+                <a href="/languages" class="site-nav__item-link site-nav__item-link--small site-nav__item-link-languages">
+                    <img class="site-nav__language-flag" src="https://www.elotouch.com/static/version1723104986/frontend/Envoy/elo/en_US/image/flags/us.png" alt="English (US) flag">
+                    <span class="site-nav__language-name">English (US)</span>
+                </a>
+            </li>
+            <li class="site-nav__list-item site-nav__search" style="margin-right: 159px;">
+                <a href="#" class="site-nav__item-link site-nav__item-link--small" data-search-ref="">
+                    <span class="site-nav__icon-search">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 19 19" preserveAspectRatio="none"><path d="M1030.6 49.589a1.349 1.349 0 0 1-1.91 0l-3.99-3.989a6.325 6.325 0 1 1 1.91-1.91l3.99 3.992a1.346 1.346 0 0 1 0 1.907zm-9.29-13.8a4.5 4.5 0 1 0 4.5 4.5 4.507 4.507 0 0 0-4.5-4.498z" transform="translate(-1015 -34)" style="fill:#3a3a3a;fill-rule:evenodd"></path></svg>
+    
+                                        </span>
+                </a>
+            </li>
+            <li class="site-nav__list-item site-nav__buy-button site-nav-mobile__btn_modified-c site-nav-mobile__btn_modified_up-c" style="right: 8px; margin-right: 0px; top: 0px; position: fixed; left: auto;">
+                <a href="/how-to-buy" class="site-nav__item-link site-nav__item-link--cta">How to buy</a>
+            </li>
+        </ul> 
+    </nav> 
+    
+    
+            
+            
+    
+    <nav id="site-nav-mobile" class="site-nav-mobile">
+    
+        <div class="site-nav-mobile__menu-toggle">
+            <div class="site-nav-mobile__menu-lines">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    
+        <div class="site-nav-mobile__top">
+            <a href="/" class="site-nav-mobile__logo">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="43" height="32"><path class="cls-1" d="M24.563 31.745V.033h-6.048v31.712h6.048zM7.537 32a26.113 26.113 0 0 1-3.19-.259c-2.7-.6-4.293-2.008-4.293-3.957V10.232c0-2.628 2.9-4.275 7.5-4.275s7.5 1.647 7.5 4.275v9.353H6.1v8.106c0 1.158.567 1.247 1.45 1.247S9 28.85 9 27.691v-5.967h6.047v6.057c0 1.953-1.6 3.365-4.31 3.961a30.494 30.494 0 0 1-3.2.258zM9 10.322c0-1.159-.567-1.247-1.448-1.247s-1.45.088-1.45 1.247V16.6H9v-6.28zM35.709 32c-1.3 0-3.371-.255-3.371-.255h-.024c-2.708-.6-4.307-2.008-4.307-3.961V10.232c0-2.628 2.9-4.275 7.5-4.275S43 7.6 43 10.232v17.549c0 1.956-1.6 3.368-4.319 3.963h.011a25.494 25.494 0 0 1-2.983.256zm1.244-21.678c0-1.159-.567-1.247-1.45-1.247s-1.448.088-1.448 1.247v17.37c0 1.158.566 1.247 1.448 1.247s1.45-.089 1.45-1.247v-17.37zM0 0v4.137h15.071V0H0z"></path></svg>
+    
+                        </a>
+            <div class="site-nav-mobile__right">
+                <a href="/languages" class="site-nav-mobile__language-selector">
+                    <img class="site-nav-mobile__language-flag" src="https://www.elotouch.com/static/version1723104986/frontend/Envoy/elo/en_US/image/flags/us.png" alt="English (US) flag">
+                    <span class="site-nav-mobile__language-name">English (US)</span>
+                </a>
+                <a href="/how-to-buy" class="site-nav-mobile__btn site-nav-mobile__btn_modified_d site-nav-mobile__btn__subnav-d site-nav-mobile__btn_modified_up-mobc" style="top: 0px; position: fixed; right: 8px; left: auto; margin-right: 0px;">
+                    <span class="site-nav-mobile__btn-text">How to buy</span>
+                </a>
+            </div>
+        </div> 
+    
+        <div class="site-nav-mobile__breadcrumbs">
+            <span class="site-nav-mobile__crumb-all" data-link-crumb="all">All</span>
+            <span class="site-nav-mobile__crumb-section" data-link-crumb="search">Search</span>
+            
+                <span class="site-nav-mobile__crumb-section" data-link-crumb="products">Products</span>
+            
+                <span class="site-nav-mobile__crumb-section" data-link-crumb="solutions">Solutions</span>
+            
+                <span class="site-nav-mobile__crumb-section" data-link-crumb="services">Services</span>
+            
+                <span class="site-nav-mobile__crumb-section" data-link-crumb="support">Support</span>
+            
+                <span class="site-nav-mobile__crumb-section" data-link-crumb="about">About</span>
+            
+            <a href="/languages" class="site-nav-mobile__language-selector site-nav-mobile__language-selector--menu-open">
+                <img class="site-nav-mobile__language-flag" src="https://www.elotouch.com/static/version1723104986/frontend/Envoy/elo/en_US/image/flags/us.png" alt="English (US) flag">
+                <span class="site-nav-mobile__language-name">English (US)</span>
+            </a>
+        </div> 
+    
+        <nav class="site-nav-mobile__menu">
+    
+            
+            <ul class="site-nav-mobile__list site-nav-mobile__list--active" data-rootmenu="" data-submenu="all">
+    
+                
+                    
+                    
+                    
+                    
+                        <li class="site-nav-mobile__list-item site-nav-mobile__list-item--expandable">
+                            <a href="javascript:void(0)" class="site-nav-mobile__item-link" data-submenu-ref="products">
+                                Products                        </a>
+                    
+                    </li> 
+                    
+                
+                    
+                    
+                    
+                    
+                        <li class="site-nav-mobile__list-item site-nav-mobile__list-item--expandable">
+                            <a href="javascript:void(0)" class="site-nav-mobile__item-link" data-submenu-ref="solutions">
+                                Solutions                        </a>
+                    
+                    </li> 
+                    
+                
+                    
+                    
+                    
+                    
+                        <li class="site-nav-mobile__list-item site-nav-mobile__list-item--expandable">
+                            <a href="javascript:void(0)" class="site-nav-mobile__item-link" data-submenu-ref="services">
+                                Services                        </a>
+                    
+                    </li> 
+                    
+                
+                    
+                                    
+                    
+                    
+                        
+                    
+                    
+                        <li class="site-nav-mobile__list-item">
+                            <a href="https://myelo.elotouch.com/support" class="site-nav-mobile__item-link" data-submenu-ref="support">
+                                Support                        </a>
+                    
+                    </li> 
+                    
+                                
+                
+                    
+                                
+                
+    
+                <li class="site-nav-mobile__list-item">
+                    <a href="javascript:void(0)" class="site-nav-mobile__item-link" data-search-ref="">Search</a>
+                </li> 
+    
+            </ul> 
+    
+            
+            <ul id="site-search-mobile" class="site-nav-mobile__list" data-submenu="search">
+                <li class="site-nav-mobile__list-item">
+                    <form class="form minisearch" action="/catalogsearch/result/" method="get">
+                        <input type="text" class="site-nav-mobile__input" placeholder="I’m looking for..." autocomplete="off" name="q">
+                    </form>
+                </li>
+                <div id="search_autocomplete_mobile" class="search-autocomplete"></div>
+            </ul> 
+    
+            
+                <ul class="site-nav-mobile__list" data-submenu="products">
+                    
+                        
+                        <li class="site-nav-mobile__list-item">
+                            <a href="/mobile-computers.html" class="site-nav-mobile__item-link" data-text="Mobile Computers">Mobile Computers</a>
+                        </li> 
+                        
+                    
+                        
+                        <li class="site-nav-mobile__list-item">
+                            <a href="/touchscreen-monitors.html" class="site-nav-mobile__item-link" data-text="Touchscreen Monitors">Touchscreen Monitors</a>
+                        </li> 
+                        
+                    
+                        
+                        <li class="site-nav-mobile__list-item">
+                            <a href="/pos-terminals.html" class="site-nav-mobile__item-link" data-text="POS Terminals">POS Terminals</a>
+                        </li> 
+                        
+                    
+                        
+                        <li class="site-nav-mobile__list-item">
+                            <a href="/touchscreen-computers.html" class="site-nav-mobile__item-link" data-text="Touchscreen Computers">Touchscreen Computers</a>
+                        </li> 
+                        
+                    
+                        
+                        <li class="site-nav-mobile__list-item">
+                            <a href="/open-frame-touchscreens.html" class="site-nav-mobile__item-link" data-text="Open Frame Touchscreens">Open Frame Touchscreens</a>
+                        </li> 
+                        
+                    
+                        
+                        <li class="site-nav-mobile__list-item">
+                            <a href="/touchscreen-signage.html" class="site-nav-mobile__item-link" data-text="Touchscreen Signage">Touchscreen Signage</a>
+                        </li> 
+                        
+                    
+                        
+                        <li class="site-nav-mobile__list-item">
+                            <a href="/medical-grade-touchscreens.html" class="site-nav-mobile__item-link" data-text="Medical-Grade Touchscreens">Medical-Grade Touchscreens</a>
+                        </li> 
+                        
+                    
+                        
+                        <li class="site-nav-mobile__list-item">
+                            <a href="/touchscreen-components.html" class="site-nav-mobile__item-link" data-text="Touchscreen Components">Touchscreen Components</a>
+                        </li> 
+                        
+                    
+                        
+                        <li class="site-nav-mobile__list-item">
+                            <a href="/touchscreen-display-modules.html" class="site-nav-mobile__item-link" data-text="Touchscreen Display Modules">Touchscreen Display Modules</a>
+                        </li> 
+                        
+                    
+                        
+                        <li class="site-nav-mobile__list-item">
+                            <a href="/accessories.html" class="site-nav-mobile__item-link" data-text="Accessories">Accessories</a>
+                        </li> 
+                        
+                    
+                        
+                                            
+                        <li class="site-nav-mobile__list-item">
+                            <a href="/eloview" class="site-nav-mobile__item-link" data-text="EloView<sup>®</sup>">EloView<sup>®</sup></a>
+                        </li> 
+                        
+                                            
+                    
+                        
+                                            
+                        <li class="site-nav-mobile__list-item">
+                            <a href="/elo-pay" class="site-nav-mobile__item-link" data-text="Elo Pay">Elo Pay</a>
+                        </li> 
+                        
+                                            
+                    
+                        
+                                            
+                    
+                </ul> 
+            
+                <ul class="site-nav-mobile__list" data-submenu="solutions">
+                    
+                        
+                                            
+                        <li class="site-nav-mobile__list-item">
+                            <a href="/android" class="site-nav-mobile__item-link" data-text="Essentials for Android">Essentials for Android</a>
+                        </li> 
+                        
+                                            
+                    
+                        
+                        <li class="site-nav-mobile__list-item">
+                            <a href="/point-of-sale" class="site-nav-mobile__item-link" data-text="Point-of-Sale">Point-of-Sale</a>
+                        </li> 
+                        
+                    
+                        
+                        <li class="site-nav-mobile__list-item">
+                            <a href="/self-service" class="site-nav-mobile__item-link" data-text="Self-Service">Self-Service</a>
+                        </li> 
+                        
+                    
+                        
+                        <li class="site-nav-mobile__list-item">
+                            <a href="/retail" class="site-nav-mobile__item-link" data-text="Retail">Retail</a>
+                        </li> 
+                        
+                    
+                        
+                        <li class="site-nav-mobile__list-item">
+                            <a href="/restaurant-qsr" class="site-nav-mobile__item-link" data-text="Restaurant/QSR">Restaurant/QSR</a>
+                        </li> 
+                        
+                    
+                        
+                        <li class="site-nav-mobile__list-item">
+                            <a href="/grocery" class="site-nav-mobile__item-link" data-text="Grocery">Grocery</a>
+                        </li> 
+                        
+                    
+                        
+                        <li class="site-nav-mobile__list-item">
+                            <a href="/healthcare" class="site-nav-mobile__item-link" data-text="Healthcare">Healthcare</a>
+                        </li> 
+                        
+                    
+                        
+                        <li class="site-nav-mobile__list-item">
+                            <a href="/gaming" class="site-nav-mobile__item-link" data-text="Gaming">Gaming</a>
+                        </li> 
+                        
+                    
+                        
+                        <li class="site-nav-mobile__list-item">
+                            <a href="/touchscreen-signage" class="site-nav-mobile__item-link" data-text="Touchscreen Signage">Touchscreen Signage</a>
+                        </li> 
+                        
+                    
+                        
+                        <li class="site-nav-mobile__list-item">
+                            <a href="/corporate" class="site-nav-mobile__item-link" data-text="Corporate">Corporate</a>
+                        </li> 
+                        
+                    
+                        
+                        <li class="site-nav-mobile__list-item">
+                            <a href="/industry-4.0" class="site-nav-mobile__item-link" data-text="Industry 4.0">Industry 4.0</a>
+                        </li> 
+                        
+                    
+                        
+                        <li class="site-nav-mobile__list-item">
+                            <a href="/embedded-oem-solutions" class="site-nav-mobile__item-link" data-text="Embedded OEM Solutions">Embedded OEM Solutions</a>
+                        </li> 
+                        
+                    
+                        
+                                            
+                    
+                </ul> 
+            
+                <ul class="site-nav-mobile__list" data-submenu="services">
+                    
+                        
+                        <li class="site-nav-mobile__list-item">
+                            <a href="/services/elocare" class="site-nav-mobile__item-link" data-text="EloCare<sup>℠</sup>">EloCare<sup>℠</sup></a>
+                        </li> 
+                        
+                    
+                        
+                        <li class="site-nav-mobile__list-item">
+                            <a href="/services/elocare-os-360" class="site-nav-mobile__item-link" data-text="OS 360">OS 360</a>
+                        </li> 
+                        
+                    
+                        
+                        <li class="site-nav-mobile__list-item">
+                            <a href="/services/elocare-advance-unit-replacement" class="site-nav-mobile__item-link" data-text="Advance Unit Replacement">Advance Unit Replacement</a>
+                        </li> 
+                        
+                    
+                        
+                        <li class="site-nav-mobile__list-item">
+                            <a href="/services/elocare-accidental-damage-protection" class="site-nav-mobile__item-link" data-text="Accidental Damage Protection">Accidental Damage Protection</a>
+                        </li> 
+                        
+                    
+                        
+                        <li class="site-nav-mobile__list-item">
+                            <a href="/services/elocare-extended-warranty" class="site-nav-mobile__item-link" data-text="Extended Warranty">Extended Warranty</a>
+                        </li> 
+                        
+                    
+                        
+                        <li class="site-nav-mobile__list-item">
+                            <a href="/services/elocare-onsite-exchange" class="site-nav-mobile__item-link" data-text="On-Site Exchange">On-Site Exchange</a>
+                        </li> 
+                        
+                    
+                        
+                        <li class="site-nav-mobile__list-item">
+                            <a href="/services/elocare-professional-services" class="site-nav-mobile__item-link" data-text="Professional Services">Professional Services</a>
+                        </li> 
+                        
+                    
+                </ul> 
+            
+                <ul class="site-nav-mobile__list" data-submenu="support">
+                    
+                        
+                        <li class="site-nav-mobile__list-item">
+                            <a href="/support" class="site-nav-mobile__item-link" data-text="Overview">Overview</a>
+                        </li> 
+                        
+                    
+                        
+                        <li class="site-nav-mobile__list-item">
+                            <a href="/support/downloads" class="site-nav-mobile__item-link" data-text="Downloads">Downloads</a>
+                        </li> 
+                        
+                    
+                        
+                        <li class="site-nav-mobile__list-item">
+                            <a href="/support/technical-support" class="site-nav-mobile__item-link" data-text="Technical Support">Technical Support</a>
+                        </li> 
+                        
+                    
+                        
+                        <li class="site-nav-mobile__list-item">
+                            <a href="/support/customer-service" class="site-nav-mobile__item-link" data-text="Customer Service">Customer Care</a>
+                        </li> 
+                        
+                    
+                        
+                        <li class="site-nav-mobile__list-item">
+                            <a href="/support/technical-support/cleaning" class="site-nav-mobile__item-link" data-text="Cleaning">Cleaning</a>
+                        </li> 
+                        
+                    
+                </ul> 
+            
+                <ul class="site-nav-mobile__list" data-submenu="about">
+                    
+                        
+                        <li class="site-nav-mobile__list-item">
+                            <a href="/about" class="site-nav-mobile__item-link" data-text="Company">Company</a>
+                        </li> 
+                        
+                    
+                        
+                        <li class="site-nav-mobile__list-item">
+                            <a href="/team" class="site-nav-mobile__item-link" data-text="Team">Team</a>
+                        </li> 
+                        
+                    
+                        
+                        <li class="site-nav-mobile__list-item">
+                            <a href="/news" class="site-nav-mobile__item-link" data-text="Press">Press</a>
+                        </li> 
+                        
+                    
+                        
+                        <li class="site-nav-mobile__list-item">
+                            <a href="/events" class="site-nav-mobile__item-link" data-text="Events">Events</a>
+                        </li> 
+                        
+                    
+                        
+                        <li class="site-nav-mobile__list-item">
+                            <a href="/careers" class="site-nav-mobile__item-link" data-text="Careers">Careers</a>
+                        </li> 
+                        
+                    
+                        
+                        <li class="site-nav-mobile__list-item">
+                            <a href="/product-environmental-compliance" class="site-nav-mobile__item-link" data-text="Environment">Environment</a>
+                        </li> 
+                        
+                    
+                        
+                        <li class="site-nav-mobile__list-item">
+                            <a href="/how-to-buy" class="site-nav-mobile__item-link" data-text="How to Buy">How to buy</a>
+                        </li> 
+                        
+                    
+                </ul> 
+            
+    
+            <a href="/how-to-buy" class="site-nav-mobile__btn-cta site-nav-mobile__btn-cta--show" data-submenu-ref="all">
+                <span class="site-nav-mobile__btn-cta-text">Contact Us</span>
+            </a>
+    
+            
+                
+                    <a href="/all-products" class="site-nav-mobile__btn-cta" data-submenu-ref="products" style="bottom: 125px">
+                        <span class="site-nav-mobile__btn-cta-text">Explore all products</span>
+                    </a>
+                
+    
+                
+                    <a href="/custom-products" class="site-nav-mobile__btn-cta" data-submenu-ref="products">
+                        <span class="site-nav-mobile__btn-cta-text">Explore custom products</span>
+                    </a>
+                
+            
+                
+                    <a href="/all-solutions" class="site-nav-mobile__btn-cta" data-submenu-ref="solutions" style="bottom: 125px">
+                        <span class="site-nav-mobile__btn-cta-text">Explore all solutions</span>
+                    </a>
+                
+    
+                
+                    <a href="/how-to-buy" class="site-nav-mobile__btn-cta" data-submenu-ref="solutions">
+                        <span class="site-nav-mobile__btn-cta-text">Get in touch</span>
+                    </a>
+                
+            
+                
+                    <a href="https://portal.elotouch.com/Services" class="site-nav-mobile__btn-cta" data-submenu-ref="services" style="bottom: 125px">
+                        <span class="site-nav-mobile__btn-cta-text">Check warranty status</span>
+                    </a>
+                
+    
+                
+                    <a href="/support/policy/return" class="site-nav-mobile__btn-cta" data-submenu-ref="services">
+                        <span class="site-nav-mobile__btn-cta-text">Return &amp; Repair Policy</span>
+                    </a>
+                
+            
+                
+    
+                
+            
+                
+    
+                
+            
+    
+        </nav> 
+    
+    </nav> 
+    
+    
+        </div> <!-- __container -->
+    </header>
+</body>
+</html>
