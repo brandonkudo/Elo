@@ -237,7 +237,12 @@ You can override anything you need to for headings/etc, this is just a base to s
         padding:0
     }
 }
-
+.site-nav-mobile__btn-cta {
+    display: none;
+}
+.mm-toggle {
+    transform: translate3d(calc(-61px + 100vw), 0px, 0px);
+}
 .site-nav {
     display: none
 }
@@ -1094,7 +1099,8 @@ html:lang(fr) .site-nav-mobile__language-flag {
     display: block;
     padding: 15px 0 15px 60px;
     color: #000;
-    font-size: 21px
+    font-size: 21px;
+    font-weight: 700;
 }
 
 @media screen and (max-height: 700px) {

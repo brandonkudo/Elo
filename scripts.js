@@ -77,6 +77,7 @@ function mobileMenu() {
     let mobileNav = document.querySelector('#site-nav-mobile');
 
     toggle.addEventListener('click',function() {
+        $(toggle).toggleClass('mm-toggle');
         $(mobileNav).toggleClass('site-nav-mobile--expanded');
     });
 }
