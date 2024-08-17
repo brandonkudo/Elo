@@ -162,6 +162,24 @@ You can override anything you need to for headings/etc, this is just a base to s
 
  /* HEADER STYLES */
 
+ @media screen and (min-width: 48.0625em) {
+    .btn--secondary, .site-footer__contact-btn, .btn--fixed-width, .btn--large, .btn, .site-nav-mobile__btn, .site-nav-mobile__btn-cta, .submenu__cta-btn {
+        display: inline-block;
+    }
+}
+.btn--secondary, .site-footer__contact-btn, .btn--fixed-width, .btn--large, .btn, .site-nav-mobile__btn, .site-nav-mobile__btn-cta, .submenu__cta-btn {
+    display: block;
+    margin: 5px 0;
+    padding: 19px 40px;
+    background-color: #3ba6ef;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border: 0;
+    cursor: pointer;
+    transition: background-color .1s ease-out;
+    -webkit-font-smoothing: antialiased;
+}
 
  ul li, ol li, ul.list-inline li, .site-footer__bottom-links li, .mob-footer-bottom__list li, ul.list-unstyled li {
     position: relative;
@@ -1463,11 +1481,13 @@ html:lang(fr) .site-nav-mobile__language-flag {
     margin-bottom: 15px
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 980px) {
     .submenu__cta-btn {
-        margin-bottom:10px;
-        max-width: 250px;
-        padding: 16px 15px
+        font-size:18px;
+        margin-bottom: 20px;
+        min-width: 275px;
+        max-width: 300px;
+        padding: 18px 15px
     }
 }
 
@@ -1480,16 +1500,14 @@ html:lang(fr) .site-nav-mobile__language-flag {
     }
 }
 
-@media screen and (min-width: 980px) {
+
+@media screen and (min-width: 769px) {
     .submenu__cta-btn {
-        font-size:18px;
-        margin-bottom: 20px;
-        min-width: 275px;
-        max-width: 300px;
-        padding: 18px 15px
+        margin-bottom:10px;
+        max-width: 250px;
+        padding: 16px 15px
     }
 }
-
 .submenu__cta-btn:hover {
     background-color: #8fc4f1;
     border: 1px solid #8fc4f1
@@ -1537,9 +1555,27 @@ html:lang(fr) .site-nav-mobile__language-flag {
 
 .submenu__nav-item-link {
     color: #3a3a3a;
-    font-size: 22px
+    font-size: 22px;
+    font-weight: 700;
 }
-
+@media screen and (min-width: 48.0625em) {
+    .btn--secondary, .site-footer__contact-btn, .btn--fixed-width, .btn--large, .btn, .site-nav-mobile__btn, .site-nav-mobile__btn-cta, .submenu__cta-btn {
+        display: inline-block;
+    }
+}
+.btn--secondary, .site-footer__contact-btn, .btn--fixed-width, .btn--large, .btn, .site-nav-mobile__btn, .site-nav-mobile__btn-cta, .submenu__cta-btn {
+    display: block;
+    margin: 5px 0;
+    padding: 19px 40px;
+    background-color: #3ba6ef;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border: 0;
+    cursor: pointer;
+    transition: background-color .1s ease-out;
+    -webkit-font-smoothing: antialiased;
+}
 @media screen and (min-width: 820px) {
     .submenu__nav-item-link {
         font-size:24px
