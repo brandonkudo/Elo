@@ -47,6 +47,10 @@ You can override anything you need to for headings/etc, this is just a base to s
  .contain-sm { max-width: 1100px; }
  
  /* CTA */
+
+ a:hover {
+    color: #3ba6ef;
+ }
  .link_btn {
      margin-top: 0;
      margin-bottom: 0;
@@ -180,7 +184,20 @@ You can override anything you need to for headings/etc, this is just a base to s
     transition: background-color .1s ease-out;
     -webkit-font-smoothing: antialiased;
 }
-
+.site-footer__contact-btn {
+    padding: 19px 40px;
+    background-color: #95989f;
+    font-weight: 700;
+}
+.site-footer__contact-btn:hover {
+    background-color: #7c808c;
+}
+.site-footer__contact-info-container a {
+    font-weight: 700;
+}
+.site-footer__contact-info-container a:hover {
+    color: #7fc6f5;
+}
  ul li, ol li, ul.list-inline li, .site-footer__bottom-links li, .mob-footer-bottom__list li, ul.list-unstyled li {
     position: relative;
     margin: 18px 0;
@@ -1792,12 +1809,16 @@ html:lang(fr) .site-nav-mobile__language-flag {
     padding-bottom: 30px;
     width: 100%;
     border-top: 1px solid #eef1f7;
-    overflow: hidden
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .site-footer__container {
     position: relative;
-    padding: 0
+    padding: 0;
+    width: 100%;
 }
 
 @media screen and (min-width: 48.0625em) {
@@ -2225,9 +2246,11 @@ html:lang(fr) .site-nav-mobile__language-flag {
 }
 
 .mob-footer__section-list {
-    height: 0;
+    /* height: 0;
     overflow: hidden;
-    transition: height .3s ease-out
+    transition: height .3s ease-out */
+
+    display: none;
 }
 
 .mob-footer__section-list-item {
@@ -2347,8 +2370,34 @@ html:lang(fr) .site-nav-mobile__language-flag {
     margin-right: auto;
 }
 
-
-
+.be-related-link-container .be-label, .be-related-link-container .be-list, .be-related-link-container .be-list .be-list-item {
+    display: inline-block;
+}
+.be-related-link-container .be-label {
+    font-size: 15px;
+    font-weight: 700;
+    color: #7c808c;
+    letter-spacing: 0;
+    -webkit-font-smoothing: antialiased;
+}
+.be-related-link-container .be-list {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.be-related-link-container .be-list .be-list-item {
+    padding-right: 20px;
+}
+.be-related-link-container .be-list .be-list-item a {
+    color: #33353a;
+    font-weight: 400;
+    font-size: 13px;
+    -webkit-font-smoothing: antialiased;
+}
+ul.list--condensed li, ol.list--condensed li, .site-footer__list li {
+    margin: 10px 0;
+    font-size: 14px;
+}
 /* BRANDON'S CSS */
 
 a {
@@ -2455,7 +2504,39 @@ a {
     }
 
 }
-
+.site-footer__bottom-links {
+    position: relative;
+    display: inline-block;
+    padding-left: 20px;
+}
+ul.list-inline, .site-footer__bottom-links, .mob-footer-bottom__list, ul.list-unstyled {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul.list-inline li:first-child, .site-footer__bottom-links li:first-child, .mob-footer-bottom__list li:first-child {
+    padding-left: 0;
+}
+ul.list-inline li, .site-footer__bottom-links li, .mob-footer-bottom__list li {
+    display: inline-block;
+    padding: 0 15px;
+}
+@media (max-width: 768px) {
+    .be-related-link-container .be-list {
+        padding-left: 0;
+    }
+}
+@media (max-width: 768px) {
+    .be-related-link-container {
+        padding-left: 30px;
+        padding-top: 30px;
+    }
+}
+@media (max-width: 768px) {
+    .be-related-link-container .be-list, .be-related-link-container .be-list .be-list-item {
+        display: block;
+    }
+}
 
 /* BODY */
 

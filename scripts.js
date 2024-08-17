@@ -50,6 +50,17 @@ function showMenu() {
     });
 }
 
+function footerAccordions() {
+    let accordions = document.querySelectorAll('.mob-footer__list-item');
+    accordions.forEach(function(accordion) {
+        let body = accordion.querySelector('.mob-footer__section-list');
+        accordion.addEventListener('click',function() {
+            $(accordion).toggleClass('mob-footer__list-item--expanded');
+            $(body).slideToggle();
+        });
+    });
+}
+
 function search() {
     let search = document.querySelector('#site-search');
     let toggle = document.querySelector('.site-nav__search');
@@ -75,6 +86,7 @@ window.onload = function() {
         search();
         mobileMenu();
         showMenu();
+        footerAccordions();
         // console.log('js');
     } catch(e) {
         console.log(e);
