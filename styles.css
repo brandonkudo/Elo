@@ -191,6 +191,7 @@ You can override anything you need to for headings/etc, this is just a base to s
 }
 .site-footer__contact-btn:hover {
     background-color: #7c808c;
+    color: white;
 }
 .site-footer__contact-info-container a {
     font-weight: 700;
@@ -239,6 +240,9 @@ You can override anything you need to for headings/etc, this is just a base to s
 }
 .site-nav-mobile__btn-cta:not(.site-nav-mobile__btn-cta--show) {
     display: none;
+}
+.overflow {
+    overflow: hidden;
 }
 .mm-toggle {
     transform: translate3d(calc(-61px + 100vw), 0px, 0px);
@@ -1533,7 +1537,8 @@ html:lang(fr) .site-nav-mobile__language-flag {
 }
 .submenu__cta-btn:hover {
     background-color: #8fc4f1;
-    border: 1px solid #8fc4f1
+    border: 1px solid #8fc4f1;
+    color: white;
 }
 
 .submenu__cta-btn.secondary {
@@ -1742,7 +1747,7 @@ html:lang(fr) .site-nav-mobile__language-flag {
 }
 
 .btn {
-    color: #fff;
+    color: #fff !important;
     background-color: #0069fe;
     transition: background-color .1s ease-out, padding 350ms;
     font-size: 20px;
