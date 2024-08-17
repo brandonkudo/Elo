@@ -25,7 +25,7 @@ You can override anything you need to for headings/etc, this is just a base to s
      max-width:1920px;
      position:relative;
      overflow:hidden;
-     padding: 30px;
+     /* padding: 30px; */
     box-sizing: border-box;
      padding-top: 80px;
      margin: 0 auto;
@@ -37,8 +37,8 @@ You can override anything you need to for headings/etc, this is just a base to s
  .contain,
  .contain-lg,
  .contain-sm {
-     padding-left: 50px;
-     padding-right: 50px;
+     padding-left: 30px;
+     padding-right: 30px;
      margin: 0 auto;
      width:100%;
  }
@@ -48,7 +48,8 @@ You can override anything you need to for headings/etc, this is just a base to s
  
  /* CTA */
  .link_btn {
-     margin-top: 30px;
+     margin-top: 0;
+     margin-bottom: 0;
  }
  .link_btn a {
      font-weight: 400;
@@ -1585,18 +1586,19 @@ a {
     width: 100%;
     display: flex;
     justify-content: center;
+    padding-top: 32px
 }
 .banner-container {
-    width: 960px;
-    max-width: 90vw;
+    width: 90vw;
+    /* max-width: 90vw; */
     display: flex;
     align-items: center;
 }
 .banner-container > img {
-    width: 30%;
+    width: 35%;
 }
 .banner-caption {
-    width: 70%;
+    width: 65%;
     box-sizing: border-box;
     padding-left: 80px;
 }
@@ -1615,12 +1617,14 @@ a {
 }
 .columns {
     width: 100%;
+    box-sizing: border-box;
     display: flex;
+    margin-bottom: 200px;
 }
 .box {
     width: calc(50% - 30px);
     box-sizing: border-box;
-    padding: 100px;
+    padding: 96px;
     background-image: linear-gradient(to bottom, #f7f7f7, #F5F6FA);
     border-radius: 30px;
     display: flex;
@@ -1648,7 +1652,7 @@ a {
 }
 .columns > .box:last-of-type > p {
     padding-right: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 
 }
 .columns > .box:last-of-type > img {
@@ -1683,4 +1687,14 @@ a {
 }
 .step > p {
     margin-bottom: 0;
+}
+.terms > .contain {
+    box-sizing: border-box;
+    width: 100%;
+}
+.terms > .contain-sm > p {
+    font-size: 16px;
+}
+.terms > .contain-sm > p > a {
+    font-weight: 700;
 }
