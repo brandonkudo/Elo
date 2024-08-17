@@ -48,20 +48,32 @@ function showMenu() {
 
         });
     });
-    // console.log(parents);
-    // for (let i = 0; i < parents.length; i++) {
-    //     parents[i].addEventListener('click',function() {
-    //         if (parents[i].dataset.submenu === menus[i].dataset.submenu) {
+}
 
-    //             menus[i].classList.add('submenu-show');
-    //         }
-    //     });
-        
-    // }
+function search() {
+    let search = document.querySelector('#site-search');
+    let toggle = document.querySelector('.site-nav__search');
+
+    toggle.addEventListener('click',function() {
+        $(toggle).find('a').toggleClass('site-nav__item-link--active');
+        $(search).toggleClass('site-search--show');
+    });
+    
+}
+
+function mobileMenu() {
+    let toggle = document.querySelector('.site-nav-mobile__menu-toggle');
+    let mobileNav = document.querySelector('#site-nav-mobile');
+
+    toggle.addEventListener('click',function() {
+        $(mobileNav).toggleClass('site-nav-mobile--expanded');
+    });
 }
 
 window.onload = function() {
     try {
+        search();
+        mobileMenu();
         showMenu();
         // console.log('js');
     } catch(e) {
