@@ -163,6 +163,8 @@ You can override anything you need to for headings/etc, this is just a base to s
  /* HEADER STYLES */
 
  .site-header {
+    display: flex;
+    justify-content: center;
     position: fixed;
     left: 0;
     top: 0;
@@ -1569,8 +1571,6 @@ html:lang(fr) .site-nav-mobile__language-flag {
 
 .fw-banner {
     margin: 0 30px;
-    background-color: gray;
-    min-height: 400px;
     justify-content: center;
     flex-direction: column;
     padding: 95px 25px 25px;
@@ -1759,9 +1759,7 @@ a {
     text-decoration: none;
 }
 
-.site-nav__search > .site-nav__item-link {
-    position: relative;
-}
+
 
 #main {
     width: 100%;
@@ -1804,6 +1802,7 @@ a {
 }
 .home-banner-caption > p {
     font-size: 18px;
+    margin-bottom: 0;
 }
 
 @media screen and (max-width: 1100px) {
@@ -1858,6 +1857,7 @@ a {
     .banner-caption > h1 {
         font-size: 28px;
     }
+
 }
 
 
@@ -1868,6 +1868,7 @@ a {
     box-sizing: border-box;
     display: flex;
     margin-bottom: 150px;
+    padding: 0 30px;
 }
 .box {
     width: calc(50% - 30px);
@@ -1941,6 +1942,25 @@ a {
     .box {
         padding: 80px;
     }
+    .columns, .terms > .contain-sm {
+        padding: 0 20px;
+    }
+    .columns > .box:first-of-type {
+        margin-right: 10px;
+    }
+    .columns > .box:last-of-type {
+        margin-left: 10px;
+        padding-bottom: 80px;
+        padding-right: 0;
+    }
+    .columns > .box:last-of-type > h2 {
+        padding-right: 80px;
+    
+    }
+    .columns > .box:last-of-type > p {
+        padding-right: 80px;
+        /* margin-bottom: 80px; */
+    }
 }
 @media screen and (max-width: 1100px) {
     .box {
@@ -1949,8 +1969,112 @@ a {
     .box > h2 {
         font-size: 40px;
     }
+    .number {
+        width: 75px;
+        height: 75px;
+        min-width: 75px;
+        min-height: 75px;
+        max-width: 75px;
+        max-height: 75px;  
+    }
+    .number > h2 {
+        font-size: 40px;
+    }
+    .columns, .terms > .contain-sm {
+        padding: 0 15px;
+    }
+    .columns > .box:first-of-type {
+        margin-right: 8px;
+    }
+    .columns > .box:last-of-type {
+        margin-left: 8px;
+        padding-bottom: 64px;
+        padding-right: 0;
+    }
+    .columns > .box:last-of-type > h2 {
+        padding-right: 64px;
+    
+    }
+    .columns > .box:last-of-type > p {
+        padding-right: 64px;
+        /* margin-bottom: 64px; */
+    }
 }
+@media screen and (max-width: 950px) {
+    .columns {
+        flex-direction: column;
+        padding: 0 10px;
+    }
+    .terms > .contain-sm {
+        padding: 0 10px;
+    }
+    .box {
+        padding: 30px;
+        width: 100%;
+    }
+    .columns > .box:first-of-type {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    .columns > .box:last-of-type {
+        margin-left: 0;
+    }
+    .box > h2 {
+        font-size: 32px;
+    }
+    .number {
+        width: 50px;
+        height: 50px;
+        min-width: 50px;
+        min-height: 50px;
+        max-width: 50px;
+        max-height: 50px;  
+    }
+    .number > h2 {
+        font-size: 32px;
+    }
+    .step > p {
+        font-size: 18px;
+    }
 
+    .columns > .box:last-of-type {
+        padding-bottom: 40px;
+        padding-right: 0;
+        align-items: flex-start;
+    }
+    .columns > .box:last-of-type > h2 {
+        padding-right: 40px;
+    
+    }
+    .columns > .box:last-of-type > p {
+        padding-right: 40px;
+        margin-bottom: 64px;
+        font-size: 18px;
+    }
+    .columns > .box:last-of-type > img {
+        align-self: flex-end;
+    }
+    .link_btn a {
+
+        font-size: 18px;
+    }
+    
+}
+@media screen and (max-width: 450px) {
+    .step {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .box {
+        align-items: center;
+        text-align: center;
+    }
+    .number {
+        margin-right: 0;
+        margin-bottom: 24px;
+    }
+}
 .terms {
     margin-bottom: 100px;
 }
@@ -1960,6 +2084,7 @@ a {
 }
 .terms > .contain-sm > p {
     font-size: 16px;
+    margin-bottom: 0;
 }
 .terms > .contain-sm > p > a {
     font-weight: 700;
