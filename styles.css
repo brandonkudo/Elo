@@ -1565,6 +1565,193 @@ html:lang(fr) .site-nav-mobile__language-flag {
     border-color: #4a4e59
 }
 
+/* BOTTOM BANNER */
+
+.fw-banner {
+    margin: 0 30px;
+    background-color: gray;
+    min-height: 400px;
+    justify-content: center;
+    flex-direction: column;
+    padding: 95px 25px 25px;
+    text-align: center;
+}
+.contact {
+    background-color: #000;
+    padding-bottom: 100px;
+    margin-bottom: 30px;
+}
+.fw-banner .txt>* {
+    margin-left: auto;
+    margin-right: auto;
+}
+.fw-banner h2 {
+    font-size: 48px;
+    margin-top: 0;
+}
+@media (max-width: 1500px) {
+    .fw-banner h2 {
+        font-size: 42px;
+    }
+}
+@media (max-width: 1250px) {
+    .fw-banner h2 {
+        font-size: 36px;
+    }
+}
+
+
+@media (max-width: 1100px) {
+    .fw-banner h2 {
+        font-size: 34px;
+    }
+}
+@media (max-width: 995px) {
+    .fw-banner h2 {
+        font-size: 30px;
+        line-height: 1.1;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 500px) {
+    .fw-banner h2 {
+        font-size: 28px;
+    }
+}
+@media (max-width: 450px) {
+    .fw-banner h2 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 1500px) {
+    .fw-banner {
+        padding-top: 75px;
+    }
+}
+@media (max-width: 1375px) {
+    .box, .fw-banner {
+        min-height: auto;
+    }
+}
+@media (max-width: 1375px) {
+    .contact {
+        padding: 85px 15px;
+    }
+}
+@media (max-width: 1250px) {
+    .fw-banner {
+        margin: 0 20px;
+        padding-top: 75px;
+    }
+}
+@media (max-width: 1100px) {
+    .fw-banner {
+        margin: 0 15px;
+        padding-top: 60px;
+    }
+}
+@media (max-width: 1100px) {
+    .contact {
+        padding-bottom: 60px;
+    }
+}
+@media (max-width: 995px) {
+    .fw-banner {
+        margin: 0 10px;
+        padding-top: 50px;
+    }
+}
+@media (max-width: 995px) {
+    .contact {
+        padding-bottom: 50px;
+    }
+}
+@media (max-width: 450px) {
+    .fw-banner {
+        padding-top: 40px;
+    }
+}
+@media (max-width: 450px) {
+    .contact {
+        padding-top: 50px;
+    }
+}
+
+.btn {
+    color: #fff;
+    background-color: #0069fe;
+    transition: background-color .1s ease-out, padding 350ms;
+    font-size: 20px;
+    padding: 17px 32px;
+    margin: auto;
+    border-radius: 30px;
+    font-weight: 600;
+}
+.btn {
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border: 0;
+    cursor: pointer;
+    transition: background-color .1s ease-out;
+    -webkit-font-smoothing: antialiased;
+}
+@media (max-width: 1250px) {
+    #header .txt .btn, .btn {
+        font-size: 19px;
+        padding: 14px 40px 13px;
+    }
+}
+
+@media (max-width: 1100px) {
+    #header .txt .btn, .btn {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 995px) {
+    #header .txt .btn, .btn {
+        font-size: 17px;
+    }
+}
+@media (max-width: 995px) {
+    .btn {
+        padding: 13px 32px 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .btn {
+        display: inline-block;
+        width: auto;
+    }
+}
+
+@media (max-width: 550px) {
+    #header .txt .btn, .btn {
+        padding: 13px 35px 12px;
+    }
+}
+
+@media (max-width: 450px) {
+    #header .txt .btn, .btn {
+        font-size: 16px;
+    }
+}
+@media (max-width: 400px) {
+    .btn {
+        padding: 13px 24px 11px;
+    }
+}
+
+
+
+
+
+
+
 
 /* BRANDON'S CSS */
 
@@ -1619,7 +1806,7 @@ a {
     width: 100%;
     box-sizing: border-box;
     display: flex;
-    margin-bottom: 200px;
+    margin-bottom: 150px;
 }
 .box {
     width: calc(50% - 30px);
@@ -1688,7 +1875,10 @@ a {
 .step > p {
     margin-bottom: 0;
 }
-.terms > .contain {
+.terms {
+    margin-bottom: 100px;
+}
+.terms > .contain-sm {
     box-sizing: border-box;
     width: 100%;
 }
