@@ -4,7 +4,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elo Assessment</title>
     <link rel="stylesheet" href="styles.css">
-
+    <script src="scripts.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="site-header" style="">
@@ -27,7 +31,7 @@
                 <li class="site-nav__list-item">
                     
                     
-                    <a href="javascript:void(0)" class="site-nav__item-link" data-submenu-ref="products">
+                    <a href="javascript:void(0)" class="site-nav__item-link" data-submenu="products">
                         <span class="site-nav__item-link-text">
                             Products                    </span>
                     </a>
@@ -38,7 +42,7 @@
                 <li class="site-nav__list-item">
                     
                     
-                    <a href="javascript:void(0)" class="site-nav__item-link" data-submenu-ref="solutions">
+                    <a href="javascript:void(0)" class="site-nav__item-link" data-submenu="solutions">
                         <span class="site-nav__item-link-text">
                             Solutions                    </span>
                     </a>
@@ -49,7 +53,7 @@
                 <li class="site-nav__list-item">
                     
                     
-                    <a href="javascript:void(0)" class="site-nav__item-link" data-submenu-ref="services">
+                    <a href="javascript:void(0)" class="site-nav__item-link" data-submenu="services">
                         <span class="site-nav__item-link-text">
                             Services                    </span>
                     </a>
@@ -63,7 +67,7 @@
                     
                         
                     
-                    <a href="https://myelo.elotouch.com/support" class="site-nav__item-link" data-submenu-ref="support">
+                    <a href="https://myelo.elotouch.com/support" class="site-nav__item-link" data-submenu="support">
                         <span class="site-nav__item-link-text">
                             Support                    </span>
                     </a>
@@ -84,7 +88,7 @@
                     <span class="site-nav__language-name">English (US)</span>
                 </a>
             </li>
-            <li class="site-nav__list-item site-nav__search" style="margin-right: 159px;">
+            <li class="site-nav__list-item site-nav__search">
                 <a href="#" class="site-nav__item-link site-nav__item-link--small" data-search-ref="">
                     <span class="site-nav__icon-search">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 19 19" preserveAspectRatio="none"><path d="M1030.6 49.589a1.349 1.349 0 0 1-1.91 0l-3.99-3.989a6.325 6.325 0 1 1 1.91-1.91l3.99 3.992a1.346 1.346 0 0 1 0 1.907zm-9.29-13.8a4.5 4.5 0 1 0 4.5 4.5 4.507 4.507 0 0 0-4.5-4.498z" transform="translate(-1015 -34)" style="fill:#3a3a3a;fill-rule:evenodd"></path></svg>
@@ -92,7 +96,7 @@
                                         </span>
                 </a>
             </li>
-            <li class="site-nav__list-item site-nav__buy-button site-nav-mobile__btn_modified-c site-nav-mobile__btn_modified_up-c" style="right: 8px; margin-right: 0px; top: 0px; position: fixed; left: auto;">
+            <li class="site-nav__list-item site-nav__buy-button site-nav-mobile__btn_modified-c site-nav-mobile__btn_modified_up-c">
                 <a href="/how-to-buy" class="site-nav__item-link site-nav__item-link--cta">How to buy</a>
             </li>
         </ul> 
@@ -561,6 +565,433 @@
     
         </div> <!-- __container -->
     </header>
+    <div class="submenu__bg">
+        <div class="submenu__bg-flyout"></div>
+        <div class="submenu__bg-box"></div>
+    </div>
+    <div class="submenu submenu--products" data-submenu="products">
+
+        <div class="submenu__container">
+
+            <div class="submenu__click-area"></div>
+
+            <nav class="submenu__nav">
+                <ul class="submenu__nav-list">
+
+                    
+                        
+                        <li class="submenu__nav-list-item">
+                            <a href="/mobile-computers.html" class="submenu__nav-item-link" data-text="Mobile Computers">Mobile Computers</a>
+                        </li>
+                        
+                    
+                        
+                        <li class="submenu__nav-list-item">
+                            <a href="/touchscreen-monitors.html" class="submenu__nav-item-link" data-text="Touchscreen Monitors">Touchscreen Monitors</a>
+                        </li>
+                        
+                    
+                        
+                        <li class="submenu__nav-list-item">
+                            <a href="/pos-terminals.html" class="submenu__nav-item-link" data-text="POS Terminals">POS Terminals</a>
+                        </li>
+                        
+                    
+                        
+                        <li class="submenu__nav-list-item">
+                            <a href="/touchscreen-computers.html" class="submenu__nav-item-link" data-text="Touchscreen Computers">Touchscreen Computers</a>
+                        </li>
+                        
+                    
+                        
+                        <li class="submenu__nav-list-item">
+                            <a href="/open-frame-touchscreens.html" class="submenu__nav-item-link" data-text="Open Frame Touchscreens">Open Frame Touchscreens</a>
+                        </li>
+                        
+                    
+                        
+                        <li class="submenu__nav-list-item">
+                            <a href="/touchscreen-signage.html" class="submenu__nav-item-link" data-text="Touchscreen Signage">Touchscreen Signage</a>
+                        </li>
+                        
+                    
+                        
+                        <li class="submenu__nav-list-item">
+                            <a href="/medical-grade-touchscreens.html" class="submenu__nav-item-link" data-text="Medical-Grade Touchscreens">Medical-Grade Touchscreens</a>
+                        </li>
+                        
+                    
+                        
+                        <li class="submenu__nav-list-item">
+                            <a href="/touchscreen-components.html" class="submenu__nav-item-link" data-text="Touchscreen Components">Touchscreen Components</a>
+                        </li>
+                        
+                    
+                        
+                        <li class="submenu__nav-list-item">
+                            <a href="/touchscreen-display-modules.html" class="submenu__nav-item-link" data-text="Touchscreen Display Modules">Touchscreen Display Modules</a>
+                        </li>
+                        
+                    
+                        
+                        <li class="submenu__nav-list-item">
+                            <a href="/accessories.html" class="submenu__nav-item-link" data-text="Accessories">Accessories</a>
+                        </li>
+                        
+                    
+                        
+                                                
+                        <li class="submenu__nav-list-item">
+                            <a href="/eloview" class="submenu__nav-item-link" data-text="EloView<sup>®</sup>">EloView<sup>®</sup></a>
+                        </li>
+                        
+                                                
+                    
+                        
+                                                
+                        <li class="submenu__nav-list-item">
+                            <a href="/elo-pay" class="submenu__nav-item-link" data-text="Elo Pay">Elo Pay</a>
+                        </li>
+                        
+                                                
+                    
+                        
+                                                
+                    
+
+                </ul> 
+            </nav> 
+
+            
+
+                <div class="submenu__right">
+
+                    
+                        <a href="/all-products" class="submenu__cta-btn">Explore all products</a>
+                    
+
+                    
+                        <a href="/custom-products" class="submenu__cta-btn secondary">
+                            Explore custom products                        </a>
+                    
+
+                    
+
+                </div> 
+
+            
+
+        </div> 
+    </div>
+    <div class="submenu submenu--solutions" data-submenu="solutions">
+
+        <div class="submenu__container">
+
+            <div class="submenu__click-area"></div>
+
+            <nav class="submenu__nav">
+                <ul class="submenu__nav-list">
+
+                    
+                        
+                                                
+                        <li class="submenu__nav-list-item">
+                            <a href="/android" class="submenu__nav-item-link" data-text="Essentials for Android">Essentials for Android</a>
+                        </li>
+                        
+                                                
+                    
+                        
+                        <li class="submenu__nav-list-item">
+                            <a href="/point-of-sale" class="submenu__nav-item-link" data-text="Point-of-Sale">Point-of-Sale</a>
+                        </li>
+                        
+                    
+                        
+                        <li class="submenu__nav-list-item">
+                            <a href="/self-service" class="submenu__nav-item-link" data-text="Self-Service">Self-Service</a>
+                        </li>
+                        
+                    
+                        
+                        <li class="submenu__nav-list-item">
+                            <a href="/retail" class="submenu__nav-item-link" data-text="Retail">Retail</a>
+                        </li>
+                        
+                    
+                        
+                        <li class="submenu__nav-list-item">
+                            <a href="/restaurant-qsr" class="submenu__nav-item-link" data-text="Restaurant/QSR">Restaurant/QSR</a>
+                        </li>
+                        
+                    
+                        
+                        <li class="submenu__nav-list-item">
+                            <a href="/grocery" class="submenu__nav-item-link" data-text="Grocery">Grocery</a>
+                        </li>
+                        
+                    
+                        
+                        <li class="submenu__nav-list-item">
+                            <a href="/healthcare" class="submenu__nav-item-link" data-text="Healthcare">Healthcare</a>
+                        </li>
+                        
+                    
+                        
+                        <li class="submenu__nav-list-item">
+                            <a href="/gaming" class="submenu__nav-item-link" data-text="Gaming">Gaming</a>
+                        </li>
+                        
+                    
+                        
+                        <li class="submenu__nav-list-item">
+                            <a href="/touchscreen-signage" class="submenu__nav-item-link" data-text="Touchscreen Signage">Touchscreen Signage</a>
+                        </li>
+                        
+                    
+                        
+                        <li class="submenu__nav-list-item">
+                            <a href="/corporate" class="submenu__nav-item-link" data-text="Corporate">Corporate</a>
+                        </li>
+                        
+                    
+                        
+                        <li class="submenu__nav-list-item">
+                            <a href="/industry-4.0" class="submenu__nav-item-link" data-text="Industry 4.0">Industry 4.0</a>
+                        </li>
+                        
+                    
+                        
+                        <li class="submenu__nav-list-item">
+                            <a href="/embedded-oem-solutions" class="submenu__nav-item-link" data-text="Embedded OEM Solutions">Embedded OEM Solutions</a>
+                        </li>
+                        
+                    
+                        
+                                                
+                    
+
+                </ul> 
+            </nav> 
+
+            
+
+                <div class="submenu__right">
+
+                    
+                        <a href="/all-solutions" class="submenu__cta-btn">Explore all solutions</a>
+                    
+
+                    
+                        <a href="/how-to-buy" class="submenu__cta-btn secondary">
+                            Get in touch                        </a>
+                    
+
+                    
+
+                </div> 
+
+            
+
+        </div> 
+    </div>
+    <div class="submenu submenu--services" data-submenu="services">
+
+        <div class="submenu__container">
+
+            <div class="submenu__click-area"></div>
+
+            <nav class="submenu__nav">
+                <ul class="submenu__nav-list">
+
+                    
+                        
+                        <li class="submenu__nav-list-item">
+                            <a href="/services/elocare" class="submenu__nav-item-link" data-text="EloCare<sup>℠</sup>">EloCare<sup>℠</sup></a>
+                        </li>
+                        
+                    
+                        
+                        <li class="submenu__nav-list-item">
+                            <a href="/services/elocare-os-360" class="submenu__nav-item-link" data-text="OS 360">OS 360</a>
+                        </li>
+                        
+                    
+                        
+                        <li class="submenu__nav-list-item">
+                            <a href="/services/elocare-advance-unit-replacement" class="submenu__nav-item-link" data-text="Advance Unit Replacement">Advance Unit Replacement</a>
+                        </li>
+                        
+                    
+                        
+                        <li class="submenu__nav-list-item">
+                            <a href="/services/elocare-accidental-damage-protection" class="submenu__nav-item-link" data-text="Accidental Damage Protection">Accidental Damage Protection</a>
+                        </li>
+                        
+                    
+                        
+                        <li class="submenu__nav-list-item">
+                            <a href="/services/elocare-extended-warranty" class="submenu__nav-item-link" data-text="Extended Warranty">Extended Warranty</a>
+                        </li>
+                        
+                    
+                        
+                        <li class="submenu__nav-list-item">
+                            <a href="/services/elocare-onsite-exchange" class="submenu__nav-item-link" data-text="On-Site Exchange">On-Site Exchange</a>
+                        </li>
+                        
+                    
+                        
+                        <li class="submenu__nav-list-item">
+                            <a href="/services/elocare-professional-services" class="submenu__nav-item-link" data-text="Professional Services">Professional Services</a>
+                        </li>
+                        
+                    
+
+                </ul> 
+            </nav> 
+
+            
+
+                <div class="submenu__right">
+
+                    
+                        <a href="https://portal.elotouch.com/Services" class="submenu__cta-btn">Check warranty status</a>
+                    
+
+                    
+                        <a href="/support/policy/return" class="submenu__cta-btn secondary">
+                            Return &amp; Repair Policy                        </a>
+                    
+
+                    
+
+                </div> 
+
+            
+
+        </div> 
+    </div>
+    <div class="submenu submenu--support" data-submenu="support">
+
+        <div class="submenu__container">
+
+            <div class="submenu__click-area"></div>
+
+            <nav class="submenu__nav">
+                <ul class="submenu__nav-list">
+
+                    
+                        
+                        <li class="submenu__nav-list-item">
+                            <a href="/support" class="submenu__nav-item-link" data-text="Overview">Overview</a>
+                        </li>
+                        
+                    
+                        
+                        <li class="submenu__nav-list-item">
+                            <a href="/support/downloads" class="submenu__nav-item-link" data-text="Downloads">Downloads</a>
+                        </li>
+                        
+                    
+                        
+                        <li class="submenu__nav-list-item">
+                            <a href="/support/technical-support" class="submenu__nav-item-link" data-text="Technical Support">Technical Support</a>
+                        </li>
+                        
+                    
+                        
+                        <li class="submenu__nav-list-item">
+                            <a href="/support/customer-service" class="submenu__nav-item-link" data-text="Customer Service">Customer Care</a>
+                        </li>
+                        
+                    
+                        
+                        <li class="submenu__nav-list-item">
+                            <a href="/support/technical-support/cleaning" class="submenu__nav-item-link" data-text="Cleaning">Cleaning</a>
+                        </li>
+                        
+                    
+
+                </ul> 
+            </nav> 
+
+            
+
+        </div> 
+    </div>
+    <div class="submenu submenu--about" data-submenu="about">
+
+        <div class="submenu__container">
+
+            <div class="submenu__click-area"></div>
+
+            <nav class="submenu__nav">
+                <ul class="submenu__nav-list">
+
+                    
+                        
+                        <li class="submenu__nav-list-item">
+                            <a href="/about" class="submenu__nav-item-link" data-text="Company">Company</a>
+                        </li>
+                        
+                    
+                        
+                        <li class="submenu__nav-list-item">
+                            <a href="/team" class="submenu__nav-item-link" data-text="Team">Team</a>
+                        </li>
+                        
+                    
+                        
+                        <li class="submenu__nav-list-item">
+                            <a href="/news" class="submenu__nav-item-link" data-text="Press">Press</a>
+                        </li>
+                        
+                    
+                        
+                        <li class="submenu__nav-list-item">
+                            <a href="/events" class="submenu__nav-item-link" data-text="Events">Events</a>
+                        </li>
+                        
+                    
+                        
+                        <li class="submenu__nav-list-item">
+                            <a href="/careers" class="submenu__nav-item-link" data-text="Careers">Careers</a>
+                        </li>
+                        
+                    
+                        
+                        <li class="submenu__nav-list-item">
+                            <a href="/product-environmental-compliance" class="submenu__nav-item-link" data-text="Environment">Environment</a>
+                        </li>
+                        
+                    
+                        
+                        <li class="submenu__nav-list-item">
+                            <a href="/how-to-buy" class="submenu__nav-item-link" data-text="How to Buy">How to buy</a>
+                        </li>
+                        
+                    
+
+                </ul> 
+            </nav> 
+
+            
+
+        </div> 
+    </div>
+    <div id="site-search" class="site-search">
+        <div class="site-search__region">
+            <div class="site-search__container">
+                            <form class="form minisearch" id="search_mini_form" action="https://www.elotouch.com/catalogsearch/result" method="get">
+                            <input id="search" type="text" name="q" value="" placeholder="I’m looking for..." class="site-search__input" maxlength="128" role="combobox" aria-haspopup="false" aria-autocomplete="both" autocomplete="off">
+                                                <button type="submit" title="Go" class="site-search__btn" disabled="">
+                            Go                    </button>
+                </form>
+            </div> 
+        </div> 
+        <div id="search_autocomplete" class="search-autocomplete"></div>
+    </div>
     <main class="body-content">
         <section class="banner">
             <div class="banner-container contain-sm">
@@ -628,5 +1059,976 @@
             </div>
          </section>
     </main>
+    <footer class="site-footer">
+        <div class="site-footer__container">
+    
+            <a href="/" class="site-footer__logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="43" height="32"><path class="cls-1" d="M24.563 31.745V.033h-6.048v31.712h6.048zM7.537 32a26.113 26.113 0 0 1-3.19-.259c-2.7-.6-4.293-2.008-4.293-3.957V10.232c0-2.628 2.9-4.275 7.5-4.275s7.5 1.647 7.5 4.275v9.353H6.1v8.106c0 1.158.567 1.247 1.45 1.247S9 28.85 9 27.691v-5.967h6.047v6.057c0 1.953-1.6 3.365-4.31 3.961a30.494 30.494 0 0 1-3.2.258zM9 10.322c0-1.159-.567-1.247-1.448-1.247s-1.45.088-1.45 1.247V16.6H9v-6.28zM35.709 32c-1.3 0-3.371-.255-3.371-.255h-.024c-2.708-.6-4.307-2.008-4.307-3.961V10.232c0-2.628 2.9-4.275 7.5-4.275S43 7.6 43 10.232v17.549c0 1.956-1.6 3.368-4.319 3.963h.011a25.494 25.494 0 0 1-2.983.256zm1.244-21.678c0-1.159-.567-1.247-1.45-1.247s-1.448.088-1.448 1.247v17.37c0 1.158.566 1.247 1.448 1.247s1.45-.089 1.45-1.247v-17.37zM0 0v4.137h15.071V0H0z"></path></svg>
+    
+            </a>
+    
+            <div class="site-footer__left">
+    
+                
+                
+    
+    <div class="site-footer__row">
+    
+        
+    
+            
+    
+                <div class="site-footer__col">
+                    <ul class="site-footer__list">
+                        
+                            <li class="site-footer__list-item">
+                                <h5 class="site-footer__list-heading">Products</h5>
+                            </li>
+                        
+                        
+                            
+                            <li class="site-footer__list-item">
+                                <a href="/mobile-computers.html" class="site-footer__list-link">Mobile Computers</a>
+                            </li>
+                            
+                        
+                            
+                            <li class="site-footer__list-item">
+                                <a href="/touchscreen-monitors.html" class="site-footer__list-link">Touchscreen Monitors</a>
+                            </li>
+                            
+                        
+                            
+                            <li class="site-footer__list-item">
+                                <a href="/pos-terminals.html" class="site-footer__list-link">POS Terminals</a>
+                            </li>
+                            
+                        
+                            
+                            <li class="site-footer__list-item">
+                                <a href="/touchscreen-computers.html" class="site-footer__list-link">Touchscreen Computers</a>
+                            </li>
+                            
+                        
+                            
+                            <li class="site-footer__list-item">
+                                <a href="/open-frame-touchscreens.html" class="site-footer__list-link">Open Frame Touchscreens</a>
+                            </li>
+                            
+                        
+                            
+                            <li class="site-footer__list-item">
+                                <a href="/touchscreen-signage.html" class="site-footer__list-link">Touchscreen Signage</a>
+                            </li>
+                            
+                        
+                            
+                            <li class="site-footer__list-item">
+                                <a href="/medical-grade-touchscreens.html" class="site-footer__list-link">Medical-Grade Touchscreens</a>
+                            </li>
+                            
+                        
+                            
+                            <li class="site-footer__list-item">
+                                <a href="/touchscreen-components.html" class="site-footer__list-link">Touchscreen Components</a>
+                            </li>
+                            
+                        
+                            
+                            <li class="site-footer__list-item">
+                                <a href="/touchscreen-display-modules.html" class="site-footer__list-link">Touchscreen Display Modules</a>
+                            </li>
+                            
+                        
+                            
+                            <li class="site-footer__list-item">
+                                <a href="/accessories.html" class="site-footer__list-link">Accessories</a>
+                            </li>
+                            
+                        
+                            
+                                                    
+                            <li class="site-footer__list-item">
+                                <a href="/eloview" class="site-footer__list-link">EloView<sup>®</sup></a>
+                            </li>
+                            
+                                                    
+                        
+                            
+                                                    
+                            <li class="site-footer__list-item">
+                                <a href="/elo-pay" class="site-footer__list-link">Elo Pay</a>
+                            </li>
+                            
+                                                    
+                        
+                            
+                                                    
+                        
+                            
+                            <li class="site-footer__list-item">
+                                <a href="/custom-products" class="site-footer__list-link">Custom Products</a>
+                            </li>
+                            
+                        
+                    </ul> 
+                </div> 
+    
+        
+    
+            
+    
+                <div class="site-footer__col">
+                    <ul class="site-footer__list">
+                        
+                            <li class="site-footer__list-item">
+                                <h5 class="site-footer__list-heading">Solutions</h5>
+                            </li>
+                        
+                        
+                            
+                                                    
+                            <li class="site-footer__list-item">
+                                <a href="/android" class="site-footer__list-link">Essentials for Android</a>
+                            </li>
+                            
+                                                    
+                        
+                            
+                            <li class="site-footer__list-item">
+                                <a href="/point-of-sale" class="site-footer__list-link">Point-of-Sale</a>
+                            </li>
+                            
+                        
+                            
+                            <li class="site-footer__list-item">
+                                <a href="/self-service" class="site-footer__list-link">Self-Service</a>
+                            </li>
+                            
+                        
+                            
+                            <li class="site-footer__list-item">
+                                <a href="/retail" class="site-footer__list-link">Retail</a>
+                            </li>
+                            
+                        
+                            
+                            <li class="site-footer__list-item">
+                                <a href="/restaurant-qsr" class="site-footer__list-link">Restaurant/QSR</a>
+                            </li>
+                            
+                        
+                            
+                            <li class="site-footer__list-item">
+                                <a href="/grocery" class="site-footer__list-link">Grocery</a>
+                            </li>
+                            
+                        
+                            
+                            <li class="site-footer__list-item">
+                                <a href="/healthcare" class="site-footer__list-link">Healthcare</a>
+                            </li>
+                            
+                        
+                            
+                            <li class="site-footer__list-item">
+                                <a href="/gaming" class="site-footer__list-link">Gaming</a>
+                            </li>
+                            
+                        
+                            
+                            <li class="site-footer__list-item">
+                                <a href="/touchscreen-signage" class="site-footer__list-link">Touchscreen Signage</a>
+                            </li>
+                            
+                        
+                            
+                            <li class="site-footer__list-item">
+                                <a href="/corporate" class="site-footer__list-link">Corporate</a>
+                            </li>
+                            
+                        
+                            
+                            <li class="site-footer__list-item">
+                                <a href="/industry-4.0" class="site-footer__list-link">Industry 4.0</a>
+                            </li>
+                            
+                        
+                            
+                            <li class="site-footer__list-item">
+                                <a href="/embedded-oem-solutions" class="site-footer__list-link">Embedded OEM Solutions</a>
+                            </li>
+                            
+                        
+                            
+                                                    
+                        
+                    </ul> 
+                </div> 
+    
+        
+    
+            
+    
+                <div class="site-footer__col">
+                    <ul class="site-footer__list">
+                        
+                            <li class="site-footer__list-item">
+                                <h5 class="site-footer__list-heading">About</h5>
+                            </li>
+                        
+                        
+                            
+                            <li class="site-footer__list-item">
+                                <a href="/about" class="site-footer__list-link">Company</a>
+                            </li>
+                            
+                        
+                            
+                            <li class="site-footer__list-item">
+                                <a href="/team" class="site-footer__list-link">Team</a>
+                            </li>
+                            
+                        
+                            
+                            <li class="site-footer__list-item">
+                                <a href="/news" class="site-footer__list-link">News</a>
+                            </li>
+                            
+                        
+                            
+                            <li class="site-footer__list-item">
+                                <a href="/events" class="site-footer__list-link">Events</a>
+                            </li>
+                            
+                        
+                            
+                            <li class="site-footer__list-item">
+                                <a href="/careers" class="site-footer__list-link">Careers</a>
+                            </li>
+                            
+                        
+                            
+                            <li class="site-footer__list-item">
+                                <a href="/product-environmental-compliance" class="site-footer__list-link">Environment</a>
+                            </li>
+                            
+                        
+                            
+                            <li class="site-footer__list-item">
+                                <a href="/quality" class="site-footer__list-link">Quality</a>
+                            </li>
+                            
+                        
+                            
+                            <li class="site-footer__list-item">
+                                <a href="/customer-stories" class="site-footer__list-link">Customer Stories</a>
+                            </li>
+                            
+                        
+                            
+                            <li class="site-footer__list-item">
+                                <a href="/how-to-buy" class="site-footer__list-link">How to buy</a>
+                            </li>
+                            
+                        
+                    </ul> 
+                </div> 
+    
+        
+    
+            
+                </div> 
+                <div class="site-footer__row">
+            
+    
+                <div class="site-footer__col">
+                    <ul class="site-footer__list">
+                        
+                            <li class="site-footer__list-item">
+                                <h5 class="site-footer__list-heading">Services</h5>
+                            </li>
+                        
+                        
+                            
+                            <li class="site-footer__list-item">
+                                <a href="/services/elocare" class="site-footer__list-link">EloCare<sup>℠</sup></a>
+                            </li>
+                            
+                        
+                            
+                            <li class="site-footer__list-item">
+                                <a href="/services/elocare-os-360" class="site-footer__list-link">OS 360</a>
+                            </li>
+                            
+                        
+                            
+                            <li class="site-footer__list-item">
+                                <a href="/services/elocare-advance-unit-replacement" class="site-footer__list-link">Advance Unit Replacement</a>
+                            </li>
+                            
+                        
+                            
+                            <li class="site-footer__list-item">
+                                <a href="/services/elocare-accidental-damage-protection" class="site-footer__list-link">Accidental Damage Protection</a>
+                            </li>
+                            
+                        
+                            
+                            <li class="site-footer__list-item">
+                                <a href="/services/elocare-extended-warranty" class="site-footer__list-link">Extended Warranty</a>
+                            </li>
+                            
+                        
+                            
+                            <li class="site-footer__list-item">
+                                <a href="/services/elocare-onsite-exchange" class="site-footer__list-link">On-Site Exchange</a>
+                            </li>
+                            
+                        
+                            
+                            <li class="site-footer__list-item">
+                                <a href="/services/elocare-professional-services" class="site-footer__list-link">Professional Services</a>
+                            </li>
+                            
+                        
+                    </ul> 
+                </div> 
+    
+        
+    
+            
+    
+                <div class="site-footer__col">
+                    <ul class="site-footer__list">
+                        
+                            <li class="site-footer__list-item">
+                                <h5 class="site-footer__list-heading">Support</h5>
+                            </li>
+                        
+                        
+                            
+                            <li class="site-footer__list-item">
+                                <a href="/support" class="site-footer__list-link">Overview</a>
+                            </li>
+                            
+                        
+                            
+                            <li class="site-footer__list-item">
+                                <a href="/support/technical-support" class="site-footer__list-link">Technical Support</a>
+                            </li>
+                            
+                        
+                            
+                            <li class="site-footer__list-item">
+                                <a href="/support/customer-service" class="site-footer__list-link">Customer Care</a>
+                            </li>
+                            
+                        
+                            
+                            <li class="site-footer__list-item">
+                                <a href="https://portal.elotouch.com/supplier" class="site-footer__list-link">Supplier Portal</a>
+                            </li>
+                            
+                        
+                            
+                            <li class="site-footer__list-item">
+                                <a href="/support/service-and-repair" class="site-footer__list-link">Service &amp; Repair</a>
+                            </li>
+                            
+                        
+                            
+                            <li class="site-footer__list-item">
+                                <a href="/support/downloads" class="site-footer__list-link">Downloads</a>
+                            </li>
+                            
+                        
+                            
+                            <li class="site-footer__list-item">
+                                <a href="/support/documentation" class="site-footer__list-link">Documentation</a>
+                            </li>
+                            
+                        
+                            
+                            <li class="site-footer__list-item">
+                                <a href="/support/warranty" class="site-footer__list-link">Warranty Information</a>
+                            </li>
+                            
+                        
+                            
+                            <li class="site-footer__list-item">
+                                <a href="https://www.elotouchexpress.com/" class="site-footer__list-link">Portal (E-Commerce)</a>
+                            </li>
+                            
+                        
+                    </ul> 
+                </div> 
+    
+        
+    
+            
+    
+                <div class="site-footer__col">
+                    <ul class="site-footer__list">
+                        
+                            <li class="site-footer__list-item">
+                                <h5 class="site-footer__list-heading">Partners</h5>
+                            </li>
+                        
+                        
+                            
+                            <li class="site-footer__list-item">
+                                <a href="/elite-partner-program" class="site-footer__list-link">Elo Elite Partner Program</a>
+                            </li>
+                            
+                        
+                            
+                            <li class="site-footer__list-item">
+                                <a href="/software-and-hardware-partners" class="site-footer__list-link">Software &amp; Hardware Partners</a>
+                            </li>
+                            
+                        
+                            
+                            <li class="site-footer__list-item">
+                                <a href="https://myelo.force.com/manrep/s/" class="site-footer__list-link">Elo ManRep Portal</a>
+                            </li>
+                            
+                        
+                            
+                            <li class="site-footer__list-item">
+                                <a href="https://na6.salesforce.com/secur/login_portal.jsp?orgId=00D80000000aWor&amp;portalId=06080000000QwHb" class="site-footer__list-link">Elo Distributor Portal</a>
+                            </li>
+                            
+                        
+                    </ul> 
+                </div> 
+    
+        
+    
+    </div> 
+    
+    
+                
+                
+    
+    <nav id="mob-footer" class="mob-footer">
+    
+        <ul class="mob-footer__list">
+    
+            
+    
+                <li class="mob-footer__list-item">
+                    
+                        <h5 class="mob-footer__section-label">Products</h5>
+                    
+                    <ul class="mob-footer__section-list" style="height: 0;">
+                        
+                            
+                            <li class="mob-footer__section-list-item">
+                                <a href="/mobile-computers.html" class="mob-footer__section-item-link">Mobile Computers</a>
+                            </li> 
+                            
+                        
+                            
+                            <li class="mob-footer__section-list-item">
+                                <a href="/touchscreen-monitors.html" class="mob-footer__section-item-link">Touchscreen Monitors</a>
+                            </li> 
+                            
+                        
+                            
+                            <li class="mob-footer__section-list-item">
+                                <a href="/pos-terminals.html" class="mob-footer__section-item-link">POS Terminals</a>
+                            </li> 
+                            
+                        
+                            
+                            <li class="mob-footer__section-list-item">
+                                <a href="/touchscreen-computers.html" class="mob-footer__section-item-link">Touchscreen Computers</a>
+                            </li> 
+                            
+                        
+                            
+                            <li class="mob-footer__section-list-item">
+                                <a href="/open-frame-touchscreens.html" class="mob-footer__section-item-link">Open Frame Touchscreens</a>
+                            </li> 
+                            
+                        
+                            
+                            <li class="mob-footer__section-list-item">
+                                <a href="/touchscreen-signage.html" class="mob-footer__section-item-link">Touchscreen Signage</a>
+                            </li> 
+                            
+                        
+                            
+                            <li class="mob-footer__section-list-item">
+                                <a href="/medical-grade-touchscreens.html" class="mob-footer__section-item-link">Medical-Grade Touchscreens</a>
+                            </li> 
+                            
+                        
+                            
+                            <li class="mob-footer__section-list-item">
+                                <a href="/touchscreen-components.html" class="mob-footer__section-item-link">Touchscreen Components</a>
+                            </li> 
+                            
+                        
+                            
+                            <li class="mob-footer__section-list-item">
+                                <a href="/touchscreen-display-modules.html" class="mob-footer__section-item-link">Touchscreen Display Modules</a>
+                            </li> 
+                            
+                        
+                            
+                            <li class="mob-footer__section-list-item">
+                                <a href="/accessories.html" class="mob-footer__section-item-link">Accessories</a>
+                            </li> 
+                            
+                        
+                            
+                                                    
+                            <li class="mob-footer__section-list-item">
+                                <a href="/eloview" class="mob-footer__section-item-link">EloView<sup>®</sup></a>
+                            </li> 
+                            
+                                                    
+                        
+                            
+                                                    
+                            <li class="mob-footer__section-list-item">
+                                <a href="/elo-pay" class="mob-footer__section-item-link">Elo Pay</a>
+                            </li> 
+                            
+                                                    
+                        
+                            
+                                                    
+                        
+                            
+                            <li class="mob-footer__section-list-item">
+                                <a href="/custom-products" class="mob-footer__section-item-link">Custom Products</a>
+                            </li> 
+                            
+                        
+                    </ul> 
+                </li> 
+    
+            
+    
+                <li class="mob-footer__list-item">
+                    
+                        <h5 class="mob-footer__section-label">Solutions</h5>
+                    
+                    <ul class="mob-footer__section-list" style="height: 0;">
+                        
+                            
+                                                    
+                            <li class="mob-footer__section-list-item">
+                                <a href="/android" class="mob-footer__section-item-link">Essentials for Android</a>
+                            </li> 
+                            
+                                                    
+                        
+                            
+                            <li class="mob-footer__section-list-item">
+                                <a href="/point-of-sale" class="mob-footer__section-item-link">Point-of-Sale</a>
+                            </li> 
+                            
+                        
+                            
+                            <li class="mob-footer__section-list-item">
+                                <a href="/self-service" class="mob-footer__section-item-link">Self-Service</a>
+                            </li> 
+                            
+                        
+                            
+                            <li class="mob-footer__section-list-item">
+                                <a href="/retail" class="mob-footer__section-item-link">Retail</a>
+                            </li> 
+                            
+                        
+                            
+                            <li class="mob-footer__section-list-item">
+                                <a href="/restaurant-qsr" class="mob-footer__section-item-link">Restaurant/QSR</a>
+                            </li> 
+                            
+                        
+                            
+                            <li class="mob-footer__section-list-item">
+                                <a href="/grocery" class="mob-footer__section-item-link">Grocery</a>
+                            </li> 
+                            
+                        
+                            
+                            <li class="mob-footer__section-list-item">
+                                <a href="/healthcare" class="mob-footer__section-item-link">Healthcare</a>
+                            </li> 
+                            
+                        
+                            
+                            <li class="mob-footer__section-list-item">
+                                <a href="/gaming" class="mob-footer__section-item-link">Gaming</a>
+                            </li> 
+                            
+                        
+                            
+                            <li class="mob-footer__section-list-item">
+                                <a href="/touchscreen-signage" class="mob-footer__section-item-link">Touchscreen Signage</a>
+                            </li> 
+                            
+                        
+                            
+                            <li class="mob-footer__section-list-item">
+                                <a href="/corporate" class="mob-footer__section-item-link">Corporate</a>
+                            </li> 
+                            
+                        
+                            
+                            <li class="mob-footer__section-list-item">
+                                <a href="/industry-4.0" class="mob-footer__section-item-link">Industry 4.0</a>
+                            </li> 
+                            
+                        
+                            
+                            <li class="mob-footer__section-list-item">
+                                <a href="/embedded-oem-solutions" class="mob-footer__section-item-link">Embedded OEM Solutions</a>
+                            </li> 
+                            
+                        
+                            
+                                                    
+                        
+                    </ul> 
+                </li> 
+    
+            
+    
+                <li class="mob-footer__list-item">
+                    
+                        <h5 class="mob-footer__section-label">About</h5>
+                    
+                    <ul class="mob-footer__section-list" style="height: 0;">
+                        
+                            
+                            <li class="mob-footer__section-list-item">
+                                <a href="/about" class="mob-footer__section-item-link">Company</a>
+                            </li> 
+                            
+                        
+                            
+                            <li class="mob-footer__section-list-item">
+                                <a href="/team" class="mob-footer__section-item-link">Team</a>
+                            </li> 
+                            
+                        
+                            
+                            <li class="mob-footer__section-list-item">
+                                <a href="/news" class="mob-footer__section-item-link">News</a>
+                            </li> 
+                            
+                        
+                            
+                            <li class="mob-footer__section-list-item">
+                                <a href="/events" class="mob-footer__section-item-link">Events</a>
+                            </li> 
+                            
+                        
+                            
+                            <li class="mob-footer__section-list-item">
+                                <a href="/careers" class="mob-footer__section-item-link">Careers</a>
+                            </li> 
+                            
+                        
+                            
+                            <li class="mob-footer__section-list-item">
+                                <a href="/product-environmental-compliance" class="mob-footer__section-item-link">Environment</a>
+                            </li> 
+                            
+                        
+                            
+                            <li class="mob-footer__section-list-item">
+                                <a href="/quality" class="mob-footer__section-item-link">Quality</a>
+                            </li> 
+                            
+                        
+                            
+                            <li class="mob-footer__section-list-item">
+                                <a href="/customer-stories" class="mob-footer__section-item-link">Customer Stories</a>
+                            </li> 
+                            
+                        
+                            
+                            <li class="mob-footer__section-list-item">
+                                <a href="/how-to-buy" class="mob-footer__section-item-link">How to buy</a>
+                            </li> 
+                            
+                        
+                    </ul> 
+                </li> 
+    
+            
+    
+                <li class="mob-footer__list-item">
+                    
+                        <h5 class="mob-footer__section-label">Services</h5>
+                    
+                    <ul class="mob-footer__section-list" style="height: 0;">
+                        
+                            
+                            <li class="mob-footer__section-list-item">
+                                <a href="/services/elocare" class="mob-footer__section-item-link">EloCare<sup>℠</sup></a>
+                            </li> 
+                            
+                        
+                            
+                            <li class="mob-footer__section-list-item">
+                                <a href="/services/elocare-os-360" class="mob-footer__section-item-link">OS 360</a>
+                            </li> 
+                            
+                        
+                            
+                            <li class="mob-footer__section-list-item">
+                                <a href="/services/elocare-advance-unit-replacement" class="mob-footer__section-item-link">Advance Unit Replacement</a>
+                            </li> 
+                            
+                        
+                            
+                            <li class="mob-footer__section-list-item">
+                                <a href="/services/elocare-accidental-damage-protection" class="mob-footer__section-item-link">Accidental Damage Protection</a>
+                            </li> 
+                            
+                        
+                            
+                            <li class="mob-footer__section-list-item">
+                                <a href="/services/elocare-extended-warranty" class="mob-footer__section-item-link">Extended Warranty</a>
+                            </li> 
+                            
+                        
+                            
+                            <li class="mob-footer__section-list-item">
+                                <a href="/services/elocare-onsite-exchange" class="mob-footer__section-item-link">On-Site Exchange</a>
+                            </li> 
+                            
+                        
+                            
+                            <li class="mob-footer__section-list-item">
+                                <a href="/services/elocare-professional-services" class="mob-footer__section-item-link">Professional Services</a>
+                            </li> 
+                            
+                        
+                    </ul> 
+                </li> 
+    
+            
+    
+                <li class="mob-footer__list-item">
+                    
+                        <h5 class="mob-footer__section-label">Support</h5>
+                    
+                    <ul class="mob-footer__section-list" style="height: 0;">
+                        
+                            
+                            <li class="mob-footer__section-list-item">
+                                <a href="/support" class="mob-footer__section-item-link">Overview</a>
+                            </li> 
+                            
+                        
+                            
+                            <li class="mob-footer__section-list-item">
+                                <a href="/support/technical-support" class="mob-footer__section-item-link">Technical Support</a>
+                            </li> 
+                            
+                        
+                            
+                            <li class="mob-footer__section-list-item">
+                                <a href="/support/customer-service" class="mob-footer__section-item-link">Customer Care</a>
+                            </li> 
+                            
+                        
+                            
+                            <li class="mob-footer__section-list-item">
+                                <a href="https://portal.elotouch.com/supplier" class="mob-footer__section-item-link">Supplier Portal</a>
+                            </li> 
+                            
+                        
+                            
+                            <li class="mob-footer__section-list-item">
+                                <a href="/support/service-and-repair" class="mob-footer__section-item-link">Service &amp; Repair</a>
+                            </li> 
+                            
+                        
+                            
+                            <li class="mob-footer__section-list-item">
+                                <a href="/support/downloads" class="mob-footer__section-item-link">Downloads</a>
+                            </li> 
+                            
+                        
+                            
+                            <li class="mob-footer__section-list-item">
+                                <a href="/support/documentation" class="mob-footer__section-item-link">Documentation</a>
+                            </li> 
+                            
+                        
+                            
+                            <li class="mob-footer__section-list-item">
+                                <a href="/support/warranty" class="mob-footer__section-item-link">Warranty Information</a>
+                            </li> 
+                            
+                        
+                            
+                            <li class="mob-footer__section-list-item">
+                                <a href="https://www.elotouchexpress.com/" class="mob-footer__section-item-link">Portal (E-Commerce)</a>
+                            </li> 
+                            
+                        
+                    </ul> 
+                </li> 
+    
+            
+    
+                <li class="mob-footer__list-item">
+                    
+                        <h5 class="mob-footer__section-label">Partners</h5>
+                    
+                    <ul class="mob-footer__section-list" style="height: 0;">
+                        
+                            
+                            <li class="mob-footer__section-list-item">
+                                <a href="/elite-partner-program" class="mob-footer__section-item-link">Elo Elite Partner Program</a>
+                            </li> 
+                            
+                        
+                            
+                            <li class="mob-footer__section-list-item">
+                                <a href="/software-and-hardware-partners" class="mob-footer__section-item-link">Software &amp; Hardware Partners</a>
+                            </li> 
+                            
+                        
+                            
+                            <li class="mob-footer__section-list-item">
+                                <a href="https://myelo.force.com/manrep/s/" class="mob-footer__section-item-link">Elo ManRep Portal</a>
+                            </li> 
+                            
+                        
+                            
+                            <li class="mob-footer__section-list-item">
+                                <a href="https://na6.salesforce.com/secur/login_portal.jsp?orgId=00D80000000aWor&amp;portalId=06080000000QwHb" class="mob-footer__section-item-link">Elo Distributor Portal</a>
+                            </li> 
+                            
+                        
+                    </ul> 
+                </li> 
+    
+            
+    
+        </ul> 
+    
+    </nav> 
+    
+    
+            </div> 
+    
+            <div class="site-footer__right">
+    
+                
+                
+    
+    <div class="site-footer__contact-cta-container">
+        <h4 class="site-footer__contact-heading">Better Touch, Better Business.</h4>
+        <span class="site-footer__contact-description">Contact Sales at Elo.</span>
+        <a href="/how-to-buy" class="site-footer__contact-btn">Go Elo Today</a>
+    </div>
+    
+    <div class="site-footer__contact-info-container">
+        <span class="site-footer__contact-info-label">Call Us</span>
+                        <a href="tel:+14085978000" class="site-footer__contact-info-item">1 (408) 597 8000</a>
+    
+        <span class="site-footer__contact-info-label">Email Us</span>
+        <a href="mailto:EloSales.NA@elotouch.com?subject=EloTouch website inquiry" class="site-footer__contact-info-item">EloSales.NA@elotouch.com</a>
+    </div>
+    
+    
+    
+            </div> 
+    
+        </div> 
+    
+        <div class="be-ix-link-block site-footer__container"><div class="be-related-link-container"><div class="be-label">Also of Interest</div><ul class="be-list"><li class="be-list-item"><a class="be-related-link" href="https://www.elotouch.com/accessories.html">Touchscreen Accessories.</a></li><li class="be-list-item"><a class="be-related-link" href="https://www.elotouch.com/touchscreen-computers.html">Advanced Touchscreen Computer Displays</a></li><li class="be-list-item"><a class="be-related-link" href="https://www.elotouch.com/touchscreen-monitors.html">High Quality Touchscreen Computer Monitors</a></li></ul> </div></div><div class="site-footer__container site-footer__bottom-items">
+            
+            
+    
+    <div class="site-footer__row">
+    
+        <span class="site-footer__copyright">
+            © 2024 Elo Touch Solutions, Inc. All rights reserved.    </span>
+    
+        <ul class="site-footer__bottom-links">
+            
+                <li class="site-footer__bottom-links-item">
+                    <a href="/privacy-policy" class="site-footer__bottom-links-link">Privacy Policy</a>
+                </li>
+            
+                <li class="site-footer__bottom-links-item">
+                    <a href="/terms-of-use" class="site-footer__bottom-links-link">Terms of Use</a>
+                </li>
+            
+                <li class="site-footer__bottom-links-item">
+                    <a href="/privacy-policy" class="site-footer__bottom-links-link">Legal</a>
+                </li>
+            
+            <li class="site-footer__bottom-links-item">
+                <!-- OneTrust Cookies Settings button start -->
+                <a class="site-footer__bottom-links-link optanon-show-settings" data-ignore-geolocation="true">Cookie Settings</a>
+                <!-- OneTrust Cookies Settings button end -->
+            </li>
+        </ul> <!-- __bottom-links -->
+        <ul class="site-footer__bottom-links">
+            <li class="site-footer__bottom-links-item site-footer__bottom-links-item">
+                <a href="https://www.elotouch.com/Languages" class="site-footer__bottom-links-link site-footer__language-selector site-footer__language-selector--us">
+                    <img class="site-footer__language-flag" src="https://www.elotouch.com/static/version1723104986/frontend/Envoy/elo/en_US/image/flags/us.png" alt="English (US) flag">
+                    English (US)            </a>
+            </li>
+        </ul> <!-- __bottom-links -->
+    
+    </div> <!-- __row -->
+    
+        </div> 
+    
+        
+        
+    
+    <div class="mob-footer-bottom">
+    
+        <span class="mob-footer-bottom__copyright">
+            © 2024 Elo Touch Solutions, Inc. All rights reserved.    </span>
+    
+        <ul class="mob-footer-bottom__list">
+            
+                <li class="mob-footer-bottom__list-item">
+                    <a href="/privacy-policy" class="mob-footer-bottom__item-link">Privacy Policy</a>
+                </li>
+            
+                <li class="mob-footer-bottom__list-item">
+                    <a href="/terms-of-use" class="mob-footer-bottom__item-link">Terms of Use</a>
+                </li>
+            
+                <li class="mob-footer-bottom__list-item">
+                    <a href="/privacy-policy" class="mob-footer-bottom__item-link">Legal</a>
+                </li>
+            
+            <li class="mob-footer-bottom__list-item">
+                <!-- OneTrust Cookies Settings button start -->
+                <a class="mob-footer-bottom__item-link optanon-show-settings" data-ignore-geolocation="true">Cookie Settings</a>
+                <!-- OneTrust Cookies Settings button end -->
+            </li>
+            <li class="mob-footer-bottom__list-item">
+                <a href="https://www.elotouch.com/Languages" class="mob-footer-bottom__item-link mob-footer-bottom__language-selector mob-footer-bottom__language-selector--us">
+                    <img class="mob-footer-bottom__language-flag" src="https://www.elotouch.com/static/version1723104986/frontend/Envoy/elo/en_US/image/flags/us.png" alt="English (US) flag">
+                    English (US)            </a>
+            </li>
+        </ul> <!-- __bottom-links -->
+    
+    </div> <!-- __bottom -->
+    
+    
+    </footer>
 </body>
 </html>
