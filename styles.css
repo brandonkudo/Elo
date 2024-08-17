@@ -168,9 +168,9 @@ You can override anything you need to for headings/etc, this is just a base to s
     }
 }
 .btn--secondary, .site-footer__contact-btn, .btn--fixed-width, .btn--large, .btn, .site-nav-mobile__btn, .site-nav-mobile__btn-cta, .submenu__cta-btn {
-    display: block;
+    /* display: block; */
     margin: 5px 0;
-    padding: 19px 40px;
+    /* padding: 19px 40px; */
     background-color: #3ba6ef;
     color: #fff;
     text-align: center;
@@ -576,13 +576,13 @@ You can override anything you need to for headings/etc, this is just a base to s
 .site-nav__buy-button {
     position: relative;
     left: -1px;
-    top: 7px;
+    top: 15px;
     height: 70px;
     text-align: right;
     -webkit-backface-visibility: hidden;
-    display: -ms-flexbox;
-    display: flex;
-    margin-left: 30px
+    /* display: -ms-flexbox; */
+    /* display: flex; */
+    margin-left: 30px;
 }
 
 @media screen and (min-width: 769px) and (max-width:929px) {
@@ -1558,23 +1558,10 @@ html:lang(fr) .site-nav-mobile__language-flag {
     font-size: 22px;
     font-weight: 700;
 }
-@media screen and (min-width: 48.0625em) {
-    .btn--secondary, .site-footer__contact-btn, .btn--fixed-width, .btn--large, .btn, .site-nav-mobile__btn, .site-nav-mobile__btn-cta, .submenu__cta-btn {
-        display: inline-block;
+@media screen and (min-width: 980px) {
+    .submenu__nav-item-link {
+        font-size:26px
     }
-}
-.btn--secondary, .site-footer__contact-btn, .btn--fixed-width, .btn--large, .btn, .site-nav-mobile__btn, .site-nav-mobile__btn-cta, .submenu__cta-btn {
-    display: block;
-    margin: 5px 0;
-    padding: 19px 40px;
-    background-color: #3ba6ef;
-    color: #fff;
-    text-align: center;
-    text-decoration: none;
-    border: 0;
-    cursor: pointer;
-    transition: background-color .1s ease-out;
-    -webkit-font-smoothing: antialiased;
 }
 @media screen and (min-width: 820px) {
     .submenu__nav-item-link {
@@ -1582,11 +1569,7 @@ html:lang(fr) .site-nav-mobile__language-flag {
     }
 }
 
-@media screen and (min-width: 980px) {
-    .submenu__nav-item-link {
-        font-size:26px
-    }
-}
+
 
 .submenu__nav-item-link:hover {
     color: #0069ff
@@ -1617,6 +1600,11 @@ html:lang(fr) .site-nav-mobile__language-flag {
     margin-top: 40px;
     margin-bottom: 30px;
     border-color: #4a4e59
+}
+@media screen and (max-width: 768px) {
+    .submenu, .submenu__bg {
+        display: none !important;
+    }
 }
 
 /* BOTTOM BANNER */
