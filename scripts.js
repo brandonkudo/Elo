@@ -75,10 +75,61 @@ function search() {
 function mobileMenu() {
     let toggle = document.querySelector('.site-nav-mobile__menu-toggle');
     let mobileNav = document.querySelector('#site-nav-mobile');
+    let parents = document.querySelectorAll('.site-nav-mobile__list > li > a');
+    let menus = document.querySelectorAll('site-nav-mobile__list');
+    let list = document.querySelector('.site-nav-mobile__menu > .site-nav-mobile__list')
+    let open = false;
+
 
     toggle.addEventListener('click',function() {
         $(toggle).toggleClass('mm-toggle');
         $(mobileNav).toggleClass('site-nav-mobile--expanded');
+    });
+
+
+    parents.forEach(function(parent) {
+        parent.addEventListener('click',function() {
+            if (open === false) {
+                open = true;
+                parent.querySelector('a').classList.add('site-nav__item-link--active');
+                bg.classList.add('submenu__bg--show');
+                menus.forEach(function(menu) {
+                    menu.classList.remove('submenu--show');
+                });
+                for (let i = 0; i < menus.length; i++) {
+                    if (parent.querySelector('a').dataset.submenu === menus[i].dataset.submenu) {
+                    menus[i].classList.add('submenu--show');
+                    }
+                    
+                }
+            } else {
+                if (parent.querySelector('a').classList.contains('site-nav__item-link--active')) {
+                    open = false;
+                    parent.querySelector('a').classList.remove('site-nav__item-link--active');
+
+                    bg.classList.remove('submenu__bg--show');
+                    menus.forEach(function(menu) {
+                        menu.classList.remove('submenu--show');
+                    });
+                } else {
+                    parents.forEach(function(parent) {
+                        parent.querySelector('a').classList.remove('site-nav__item-link--active');
+                    });
+                    parent.querySelector('a').classList.add('site-nav__item-link--active');
+                    menus.forEach(function(menu) {
+                        menu.classList.remove('submenu--show');
+                    });
+                    for (let i = 0; i < menus.length; i++) {
+                        if (parent.querySelector('a').dataset.submenu === menus[i].dataset.submenu) {
+                        menus[i].classList.add('submenu--show');
+                        }
+                        
+                    }
+                }
+
+            }
+
+        });
     });
 }
 

@@ -237,9 +237,9 @@ You can override anything you need to for headings/etc, this is just a base to s
         padding:0
     }
 }
-.site-nav-mobile__btn-cta {
+/* .site-nav-mobile__btn-cta {
     display: none;
-}
+} */
 .mm-toggle {
     transform: translate3d(calc(-61px + 100vw), 0px, 0px);
 }
