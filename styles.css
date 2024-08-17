@@ -147,9 +147,9 @@ You can override anything you need to for headings/etc, this is just a base to s
  .bg-lightest-gray {background-color: #FAFBFE; }
  
  
- section {
+ /* section {
      padding: 50px 0;
- }
+ } */
  
  /* media queries */
  @media (min-width:1920px) {
@@ -1570,4 +1570,40 @@ a {
 
 .site-nav__search > .site-nav__item-link {
     position: relative;
+}
+
+#main {
+    width: 100%;
+    padding: 30px;
+    margin-top: 81px;
+    box-sizing: border-box;
+}
+.banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.banner-container {
+    width: 960px;
+    max-width: 90vw;
+    display: flex;
+    align-items: center;
+}
+.banner-container > img {
+    width: 30%;
+}
+.banner-caption {
+    width: 70%;
+    box-sizing: border-box;
+    padding-left: 80px;
+}
+.banner-caption > img {
+    margin-bottom: 30px;
+}
+.banner-caption > h1 {
+    margin-bottom: 30px;
+}
+.banner-caption > h1 > sup {
+    font-weight: 600;
+    font-size: .5em;
 }
